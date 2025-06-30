@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Posters Alcala by Miguel</title>
+
+
+<style>
+	body {
+		font-family: Arial, sans-serif;
+		margin: 0;
+		padding: 1rem;
+	}
+
+	header, main {
+		max-width: 1200px;
+		margin: auto;
+	}
+
+	header {
+		text-align: center;
+		margin-bottom: 2rem;
+		padding-bottom: 10px;
+	}
+
+	/* Crear  Rejilla en la WEB */
+	.productos {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 1rem;
+	}
+	/* Crear Rejilla en la WEB */
+
+	article {
+		border: 1px solid #ccc;
+		border-radius: 10px;
+		padding: 1rem;
+		text-align: center;
+		transition: box-shadow 0.3s ease;
+	}
+
+	article:hover {
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	}
+
+	img {
+		max-width: 100%;
+		border-radius: 10px;
+	}
+
+	button {
+		margin-top: 1rem;
+		padding: 0.5 rem 1rem;
+		border: none;
+		background-color: #28a745;
+		color: white;
+		cursor: pointer;
+		border-radius: 5px;
+	}
+
+	button:hover {
+		background-color: #218838;
+	}
+
+</style>
+</head>
+<body>
+
+<header>
+	<h1>Escaparate de Productos</h1>
+	<img src="img/banner.jpeg" width="100%">
+	<p>Selecciona un producto para m&aacute;s informaci&oacute;n</p>
+</header>
+
+<main>
+	<section class="productos">
+		<article>
+			<img src="img/Poster1.jpg" alt="Producto A" height="250px">
+			<h2>Producto A</h2>
+			<p>Precio: 19,99 &euro;</p>
+			<button onclick="seleccionarProducto('Poster1', 'Producto A', 19.99)">Ver Detalles</button>
+		</article>
+		<article>
+			<img src="img/Poster2.jpg" alt="Producto B" height="250px">
+			<h2>Producto B</h2>
+			<p>Precio: 24,99 &euro;</p>
+			<button onclick="seleccionarProducto('Poster2', 'Producto B', 24.99)">Ver Detalles</button>
+		</article>
+		<article>
+			<img src="img/Poster3.jpg" alt="Producto C" height="250px">
+			<h2>Producto C</h2>
+			<p>Precio: 29,99 &euro;</p>
+			<button onclick="seleccionarProducto('Poster3', 'Producto C', 29.99)">Ver Detalles</button>
+		</article>
+	</section>
+</main>
+
+<footer>
+	<img src="img/footer.webp" width="100%">
+</footer>
+
+<script>
+    function seleccionarProducto( tposter, tnombre, tprecio) {
+      const url = new URL("detalles.html", window.location.href);
+      url.searchParams.set("poster", tposter);
+      url.searchParams.set("nombre", tnombre);
+      url.searchParams.set("precio", tprecio);
+      window.location.href = url.toString();
+    }
+  </script>
+
+
+</body>
+</html>
