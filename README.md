@@ -24,7 +24,7 @@ Selecciona un producto para más información
 
 ---
 
-## 🛍 Producto C
+## Producto C
 
 ![Producto C](img/Poster3.jpg)
 
