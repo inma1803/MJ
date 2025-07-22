@@ -6,7 +6,7 @@ Selecciona un producto para más información
 
 ---
 
-## 🛍 Producto A
+## Producto A
 
 ![Producto A](img/Poster1.jpg)
 
@@ -15,7 +15,7 @@ Selecciona un producto para más información
 
 ---
 
-## 🛍 Producto B
+## Producto B
 
 ![Producto B](img/Poster2.jpg)
 
