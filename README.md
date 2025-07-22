@@ -6,7 +6,7 @@ Selecciona un producto para más información
 
 ---
 
-## 🛍️ Producto A
+## 🛍 Producto A
 
 ![Producto A](img/Poster1.jpg)
 
@@ -15,7 +15,7 @@ Selecciona un producto para más información
 
 ---
 
-## 🛍️ Producto B
+## 🛍 Producto B
 
 ![Producto B](img/Poster2.jpg)
 
@@ -24,7 +24,7 @@ Selecciona un producto para más información
 
 ---
 
-## 🛍️ Producto C
+## 🛍 Producto C
 
 ![Producto C](img/Poster3.jpg)
 
@@ -34,24 +34,4 @@ Selecciona un producto para más información
 ---
 
 ![Footer](img/footer.webp)
-
-
-
-
-
-
-# Detalles del Producto
-
-![Banner](img/banner.jpeg)
-
-**By Miguel Ángel**
-
----
-
-## 🖼️ Imagen del producto
-
-(Si estás viendo este documento estáticamente, la imagen dinámica no se cargará)
-
-```html
-<img src="img/Poster1.jpg" alt="Producto A">
 
